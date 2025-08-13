@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order - freefollowers.xyz</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">freefollowers.xyz</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Order</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Place Your Order</h2>
+      <form id="orderForm" action="https://formspree.io/f/mayvlrwp" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="">--Please choose an option--</option>
+          <option value="Facebook Followers">Facebook Followers</option>
+          <option value="Instagram Followers & Likes">Instagram Followers & Likes</option>
+          <option value="YouTube Subscribers & Views">YouTube Subscribers & Views</option>
+          <option value="Twitter Followers">Twitter Followers</option>
+          <option value="TikTok Views & Likes">TikTok Views & Likes</option>
+        </select>
+
+        <label for="details">Additional Details:</label>
+        <textarea id="details" name="details" rows="4" placeholder="Any specific requests or information"></textarea>
+
+        <button type="submit" class="btn-primary">Submit Order</button>
+      </form>
+      <p id="formMessage" class="form-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 freefollowers.xyz. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
